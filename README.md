@@ -3,6 +3,9 @@ PUI Section B
 
 Bun Bun Bake Shop
 
+Link to website:
+https://hellostephwang.github.io/bun-bun/
+
 Pages:
 index.html (homepage)
 flavors.html (product browsing page)
