@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blackberry</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+         <div class="nav-left">
+           <a href="index.html"><img class="logo-img" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Flogo-img.png?v=1569712862435" alt="company logo"></a>
+         </div>
+         <div class="nav-right">
+           <a href="about.html">Our Story</a>
+           <a href="contact.html">Contact</a>
+           <a href="index.html"><img class="nav-icon" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Faccount%20(2).png?v=1569712859793" alt="account icon"></a>
+           <a href="index.html"><img class="nav-icon" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Fcart.png?v=1569610347949" alt="cart icon"></a>
+         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="product-detail">
+        <div class="product-images">
+          <img class="product-image-11" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Fblackberry-img-1.1.png?v=1569766399820" alt="blackberry image 11">
+          <img class="product-image-2" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Fblackberry-img-2.png?v=1569768965060" alt="blackberry image 2">
+          <img class="product-image-3" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Fblackberry-img-3.png?v=1569766406009" alt="blackberry image 3">
+          <img class="product-image-1" src="https://cdn.glitch.com/791a0b6e-a6ac-48ef-af12-d1756213f67d%2Fblackberry-1.jpg?v=1569615536508" alt="blackberry image 1">
+        </div>
+
+        <div class="product-description shadow">
+            <h2 class="product-header uppercase">Blackberry</h2>
+            <h2 class="product-price">$19.99</h2>
+
+         <h3 class="quantity-header">Quantity</h3>
+            <select class="quantity-number" type="number">
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve" selected="selected">12</option>
+            </select>
+            <p class="quantity-x">X</p>
+            <select class="quantity-multiplier" type="number">
+              <option value="one">1</option>
+              <option value="two" selected="selected">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+            </select>
+
+          <h4 class="quantity-total uppercase"> Total Number of Buns: <span class="bun-number">24</span></h4>
+
+
+<!--             <h3 class="glazing-header">Glazing</h3> -->
+
+          <a class = "lnk-distribute uppercase">Distribute Evenly</a>
+<!--           <button class = "btn outline-yellow btn-distribute">Distribute Evenly</button> -->
+          <div class="glazing-none uppercase">
+            <h4>None</h4>
+            <form>
+              <input type="number" min="0" name="glazing-none">
+            </form>
+          </div>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <h3 class="glazing-header">Glazing</h3>
+          <div class="glazing-sugar-milk uppercase">
+            <h4>Sugar Milk</h4>
+            <form>
+              <input type="number" min="0" name="glazing-sugar-milk">
+            </form>
+          </div>
+          <div class="glazing-vanilla uppercase">
+            <h4>Vanilla</h4>
+            <form>
+              <input type="number" min="0" name="glazing-vanilla">
+            </form>
+          </div>
+          <div class="glazing-double-chocolate uppercase">
+            <h4>Double Chocolate</h4>
+            <form>
+              <input type="number" min="0" name="glazing-double-chocolate">
+            </form>
+          </div>
+          <button class = "btn fill-yellow btn-add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="tab shadow">
+        <button class="tablinks" onclick="openFacts(event, 'nutrition')">Nutrition</button>
+        <button class="tablinks" onclick="openFacts(event, 'prep')">Prep</button>
+        <button class="tablinks" onclick="openFacts(event, 'store')">Store</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="nutrition" class="tabcontent shadow">
+        <h3>Nutrition</h3>
+        <p>Contains: blah blah blah <br> Calories include: a lot</p>
+      </div>
+
+      <div id="prep" class="tabcontent shadow">
+        <h3>Preparation</h3>
+        <p>Heat it up</p>
+      </div>
+
+      <div id="store" class="tabcontent shadow">
+        <h3>Storage</h3>
+        <p>You can just eat it all or put it in the fridge.</p>
+      </div>
+
+
+    </main>
+
+    <!-- // Footer & contact info -->
+    <footer>
+        <div class="contact-info">
+          <a href="https://gmail.com">Email</a>
+          <a href="https://instagram.com">Instagram</a>
+          <a href="https://twitter.com">Twitter</a>
+          <a href="https://facebook.com">Facebook</a>
+           <p>Copyright 2019 by Bun Bun Bake Shop</p>
+        </div>
+    </footer>
+  </body>
+
+</html>
