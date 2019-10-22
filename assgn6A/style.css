@@ -1,0 +1,454 @@
+/* Color Palette
+#1B2125 - black-ish
+#CC6F6F - muted red
+#D29956 - muted yellow
+#788995 - light grey - mainly for shadow
+
+*/
+
+/* Global styles
+-------------------------*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-color: #1B2125;
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #788995;
+  font-weight: 400;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 32px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+a {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #CC6F6F;
+}
+a:hover {
+  text-decoration: none;
+  background-color: #CC6F6F;
+  opacity: .5;
+  color: white;
+
+
+}
+
+p {
+  padding: 20px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+input {
+  border-style: solid;
+  width: 100%;
+}
+.shadow {
+  box-shadow: 4px 0px 4px rgba(27, 33, 37, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-1 {
+  box-shadow: 1px 0px 1px rgba(27, 33, 37, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.back, .cont-shop {
+  text-decoration: none;
+  /* color: #D29956; */
+  font-size: 20px;
+}
+
+/* buttons
+-------------------------*/
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #CC6F6F;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: inline-block;
+
+}
+
+.fill-yellow {
+  background: #D29956;
+}
+
+.outline-yellow {
+  background: white;
+  color: #D29956;
+  border-color: #D29956;
+  border-width: 3px;
+
+}
+
+.btn-quantity {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #CC6F6F;
+  border-color: #CC6F6F;
+  border-width: 3px;
+  min-width: 24.5%;
+ }
+
+
+ /* drop down
+ -------------------------*/
+ select {
+  padding: 5px 40px 5px 5px;
+  font-size: 24px;
+  border: 3px solid #FFF;
+  background: #FFF;
+}
+
+/* Navigation
+-------------------------*/
+
+.logo-img {
+  max-width: 300px;
+}
+
+nav {
+  margin: 20px 30px 0;
+  background: white;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-left{
+  float: left;
+}
+.nav-right{
+  float: right;
+}
+
+.nav-icon {
+  max-width: 50px;
+}
+
+
+
+
+/* Footer
+-------------------------*/
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #1B2125;
+  color: white;
+}
+
+.contact-info {
+  margin-top:50px;
+  padding: 20px;
+  color: white;
+}
+
+.contact-info a {
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Homepage
+-------------------------*/
+
+/* header */
+
+.header-img {
+  max-width: 100%;
+  padding: 0 50px;
+}
+
+.banner-area{
+  position: relative;
+}
+.banner-area-text{
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #788995;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+/* Customer Reviews */
+.customer-review{
+  margin: 50px 50px 0;
+}
+
+/* Flavors Page
+-------------------------*/
+
+.flavors {
+  padding: 50px;
+  height: 650px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+
+.flavors img {
+  width: 100%;
+}
+
+
+.flavors-original {
+  position: relative;
+}
+
+.flavors-gf-original {
+  position: relative;
+}
+
+.flavors-blackberry {
+  position: relative;
+}
+
+.flavors-walnut{
+  position: relative;
+}
+
+.flavors-pumpkin-spice{
+  position: relative;
+}
+
+.flavors-caramel-pecan{
+  position: relative;
+}
+
+.flavors-label{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1B2125;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  min-width: 70%;
+}
+
+
+/* Product Page
+-------------------------*/
+
+.product-detail{
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+  "back back back back"
+  "product-images product-description product-description product-description";
+}
+
+.back{
+  grid-area: back;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  text-decoration: none;
+
+}
+
+/*product images */
+
+.product-images{
+  margin-left: 50px;
+  grid-area: product-images;
+  display: grid;
+  width: 100%;
+}
+
+
+/*product description */
+
+.product-description{
+  margin-right: 50px;
+  padding: 50px;
+  grid-area: product-description;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "product-header product-price"
+    "glazing glazing"
+    "quantity quantity"
+    "btn-add-cart btn-add-cart";
+}
+
+.product-header{
+  grid-area: product-header;
+}
+
+#product-price{
+  grid-area: product-price;
+  color: black;
+}
+
+
+.quantity{
+  grid-area: quantity;
+}
+
+.quantity-option{
+  width: 50%;
+}
+
+.glazing{
+  grid-area: glazing;
+}
+
+.btn-add-cart{
+  grid-area: btn-add-cart;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn-cart{
+  background: none;
+  border: none;
+  font-family: "Open Sans" sans-serif;
+  color: #1B2125;
+  font-size: 16px;
+}
+
+
+/* Product Page Tab
+-------------------------*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: white;
+  max-width: 100%;
+  margin: 50px 50px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  width:33.33%;
+  background-color: #CC6F6F;
+  opacity: .5;
+  color: white;
+  font-family: "Open Sans" sans-serif;
+  font-size: 16px;
+  float: left;
+  border: solid;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #CC6F6F;
+  opacity: .75;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin: 0 50px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Shopping Cart Page
+-------------------------*/
+/* #flavor-list{
+  list-style-type: none;
+} */
+
+.cart{
+  padding-top: 100px;
+  margin: 0px 50px;
+  display: grid;
+  grid-template-areas:
+  "cart-header cart-header"
+  "shopping-item shopping-item"
+  "blank total-summary"
+  "cont-shop btn-checkout"
+
+
+}
+.shopping-item{
+  grid-area:shopping-item;
+  display: grid;
+  max-width: 100%;
+  grid-template-areas:
+  "cart-images cart-description cart-description"
+}
+
+.cart-images{
+  margin-right: 50px;
+  padding: 50px;
+  grid-area: cart-images;
+}
+
+
+.cart-description{
+  grid-area: cart-description;
+  margin: 50px;
+}
+
+.total-summary{
+  grid-area: total-summary;
+}
+
+.cont-shop{
+  grid-area: cont-shop;
+  padding: 50px;
+}
+.btn-checkout{
+  margin-top: 50px;
+  grid-area: btn-checkout;
+}
+
+.btn-remove {
+  width: 100%;
+  font-size: 16px;
+  background: none;
+}
