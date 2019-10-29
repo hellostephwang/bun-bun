@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopping Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+
+  <body onload="onLoad()">
+    <header>
+      <nav>
+         <div class="nav-left">
+           <a href="index.html"><img class="logo-img" src="assets/logo.png" alt="company logo"></a>
+         </div>
+         <div class="nav-right">
+           <a href="about.html">Our Story</a>
+           <a href="contact.html">Contact</a>
+           <a href="index.html"><img class="nav-icon" src="assets/account.png" alt="account icon"></a>
+            <a href="cart.html"><button class="btn-cart"><img class="nav-icon" src="assets/cart.png" alt="cart icon">ORDERS:<span id="cart-count">0</span></button></a>
+         </div>
+      </nav>
+
+    </header>
+
+    <!-- CART AREA !-->
+    <main>
+
+      <br><br><br>
+      <!-- Selected Items: <span id="selected-item"></span> -->
+      <!-- <button onclick="clearStorage()">Clear Storage</button> -->
+       <div id="myCart">
+         <h2>Shopping Cart</h2>
+         <a class="cont-shop" href="product-details.html">Continue Shopping</a>
+
+         <div id="all-items">
+         <!-- <div class="shopping-item shadow">
+
+             <div class="cart-description">
+                 <h4 class="cart-flavor">Flavor: <span id="cartFlavor"></span></h4>
+                 <h4 class="cart-price">Price: <span id="cartPrice"></span></h4>
+
+               <div class="cart-glazing">
+                  <h4 class="cart-glazing-header">Glazing: <span id="cartGlazing"></span></h4>
+               </div>
+
+               <div class="cart-quantity">
+                  <h4 class="cart-quantity-header">Quantity: <span id="cartQuantity"></span></h4>
+               </div>
+
+                <button onclick="deleteItem(this.parentNode)" class="btn-remove">Remove From Cart</button>
+
+           </div>
+         </div> -->
+         <!-- <div class="total-summary">
+           <h4>Subtotal: $13.99</h4>
+           <h4>Tax: Calculated at checkout</h4>
+           <h3>TOTAL: Calculated at checkout</h3>
+         </div> -->
+
+       </div>
+
+     </div>
+     <button class = "btn fill-yellow btn-checkout">Checkout</button>
+
+
+    </main>
+  </body>
+
+</html>
